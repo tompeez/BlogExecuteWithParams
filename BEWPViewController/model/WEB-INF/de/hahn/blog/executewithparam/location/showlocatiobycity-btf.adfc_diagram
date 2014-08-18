@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <MethodCall
+      id="MethodCall3">
+      <property
+         name="activityId">findCityByName</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>findCityByName&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Method Call&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">279.5625</property>
+      <property
+         name="x">216.51855</property>
+   </MethodCall>
+   <View
+      id="View4">
+      <property
+         name="activityId">Locations</property>
+      <property
+         name="page">/WEB-INF/de/hahn/blog/executewithparam/location/Locations.jsff</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>Locations&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="y">279.09375</property>
+      <property
+         name="x">460.0</property>
+      <property
+         name="pageFragment">true</property>
+   </View>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase5"
+      from="MethodCall3"
+      to="View4">
+      <property
+         name="fromOutcome">findCityByName</property>
+      <property
+         name="sdm:polyPoints">R50,257.51855,279.57812,419.0,279.10938,L50</property>
+   </ControlFlowCase>
+</SDM>

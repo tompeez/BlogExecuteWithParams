@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE JboProject SYSTEM "jbo_03_01.dtd">
+<!---->
+<JboProject
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BEWPModel"
+  Version="12.1.3.9.1"
+  SeparateXMLFiles="true"
+  PackageName="de.hahn.blog.executewithparameter.model">
+  <DesignTime>
+    <Attr Name="_jprName" Value="../../../../../../BEWPModel.jpr"/>
+    <Attr Name="_jbo.TypeMapEntries" Value="OracleApps"/>
+    <Attr Name="_NamedConnection" Value="HRConn"/>
+    <Attr Name="_appModuleNames0" Value="de.hahn.blog.executewithparameter.model.adfbc.service.BEWPAppModule"/>
+  </DesignTime>
+  <Containee
+    Name="entities"
+    PackageName="de.hahn.blog.executewithparameter.model.adfbc.entities"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_EO" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="service"
+    PackageName="de.hahn.blog.executewithparameter.model.adfbc.service"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_AM" Value="true"/>
+    </DesignTime>
+  </Containee>
+  <Containee
+    Name="views"
+    PackageName="de.hahn.blog.executewithparameter.model.adfbc.views"
+    ObjectType="JboPackage">
+    <DesignTime>
+      <Attr Name="_VO" Value="true"/>
+    </DesignTime>
+  </Containee>
+</JboProject>

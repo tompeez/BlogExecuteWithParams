@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.1.3.9.1" id="DataBindings" SeparateXMLFiles="false"
+             Package="de.hahn.blog.executewithparameter.view" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding" className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/Start.jsf" usageId="de_hahn_blog_executewithparameter_view_StartPageDef"/>
+    <page path="/WEB-INF/de/hahn/blog/executewithparam/location/showlocatiobycity-btf.xml#showlocatiobycity-btf@findCityByName"
+          usageId="de_hahn_blog_executewithparameter_view_showlocatiobycity_btf_showlocatiobycity_btf_findCityByNamePageDef"/>
+    <page path="/WEB-INF/de/hahn/blog/executewithparam/location/Locations.jsff" usageId="de_hahn_blog_executewithparameter_view_LocationsPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="de_hahn_blog_executewithparameter_view_StartPageDef" path="de.hahn.blog.executewithparameter.view.pageDefs.StartPageDef"/>
+    <page id="de_hahn_blog_executewithparameter_view_showlocatiobycity_btf_showlocatiobycity_btf_findCityByNamePageDef"
+          path="de.hahn.blog.executewithparam.location.showlocatiobycity_btf_showlocatiobycity_btf_findCityByNamePageDef"/>
+    <page id="de_hahn_blog_executewithparameter_view_LocationsPageDef" path="de.hahn.blog.executewithparam.location.LocationsPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <BC4JDataControl id="BEWPAppModuleDataControl" Package="de.hahn.blog.executewithparameter.model.adfbc.service"
+                     FactoryClass="oracle.adf.model.bc4j.DataControlFactoryImpl" SupportsTransactions="true" SupportsFindMode="true" SupportsRangesize="true"
+                     SupportsResetState="true" SupportsSortCollection="true" Configuration="BEWPAppModuleLocal" syncMode="Immediate"
+                     xmlns="http://xmlns.oracle.com/adfm/datacontrol"/>
+  </dataControlUsages>
+</Application>
