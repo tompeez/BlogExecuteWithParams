@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.1.3.10.8" id="locations2_btf_locations2_btf_ExecuteWithParamsPageDef"
+                Package="de.hahn.blog.executewithparam.location" SkipValidation="true">
+  <parameters/>
+  <executables>
+    <iterator Binds="LocationsWithParamView" RangeSize="25" DataControl="BEWPAppModuleDataControl" id="LocationsWithParamViewIterator" Refresh="never"/>
+  </executables>
+  <bindings>
+    <action IterBinding="LocationsWithParamViewIterator" id="ExecuteWithParams" RequiresUpdateModel="true" Action="executeWithParams">
+      <NamedData NDName="bindCity" NDValue="#{pageFlowScope.paramCity}" NDType="java.lang.String"/>
+    </action>
+  </bindings>
+</pageDefinition>

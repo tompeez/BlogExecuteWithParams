@@ -10,12 +10,20 @@
     <page path="/WEB-INF/de/hahn/blog/executewithparam/location/showlocatiobycity-btf.xml#showlocatiobycity-btf@findCityByName"
           usageId="de_hahn_blog_executewithparameter_view_showlocatiobycity_btf_showlocatiobycity_btf_findCityByNamePageDef"/>
     <page path="/WEB-INF/de/hahn/blog/executewithparam/location/Locations.jsff" usageId="de_hahn_blog_executewithparameter_view_LocationsPageDef"/>
+    <page path="/Start2.jsf" usageId="de_hahn_blog_executewithparameter_view_Start2PageDef"/>
+    <page path="/WEB-INF/de/hahn/blog/executewithparam/location/locations2.jsff" usageId="de_hahn_blog_executewithparameter_view_locations2PageDef"/>
+    <page path="/WEB-INF/de/hahn/blog/executewithparam/location/locations2-btf.xml#locations2-btf@ExecuteWithParams"
+          usageId="de_hahn_blog_executewithparameter_view_locations2_btf_locations2_btf_ExecuteWithParamsPageDef"/>
   </pageMap>
   <pageDefinitionUsages>
     <page id="de_hahn_blog_executewithparameter_view_StartPageDef" path="de.hahn.blog.executewithparameter.view.pageDefs.StartPageDef"/>
     <page id="de_hahn_blog_executewithparameter_view_showlocatiobycity_btf_showlocatiobycity_btf_findCityByNamePageDef"
           path="de.hahn.blog.executewithparam.location.showlocatiobycity_btf_showlocatiobycity_btf_findCityByNamePageDef"/>
     <page id="de_hahn_blog_executewithparameter_view_LocationsPageDef" path="de.hahn.blog.executewithparam.location.LocationsPageDef"/>
+    <page id="de_hahn_blog_executewithparameter_view_Start2PageDef" path="de.hahn.blog.executewithparameter.view.pageDefs.Start2PageDef"/>
+    <page id="de_hahn_blog_executewithparameter_view_locations2PageDef" path="de.hahn.blog.executewithparam.location.locations2PageDef"/>
+    <page id="de_hahn_blog_executewithparameter_view_locations2_btf_locations2_btf_ExecuteWithParamsPageDef"
+          path="de.hahn.blog.executewithparam.location.locations2_btf_locations2_btf_ExecuteWithParamsPageDef"/>
   </pageDefinitionUsages>
   <dataControlUsages>
     <BC4JDataControl id="BEWPAppModuleDataControl" Package="de.hahn.blog.executewithparameter.model.adfbc.service"
