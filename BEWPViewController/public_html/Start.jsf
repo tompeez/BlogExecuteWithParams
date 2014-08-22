@@ -17,10 +17,11 @@
                     </af:gridCell>
                 </af:gridRow>
                 <af:gridRow id="gr3">
-                    <af:gridCell id="gc3"/>
+                    <af:gridCell id="gc3">
+                        <af:region value="#{bindings.showlocatiobycitybtf1.regionModel}" id="r1"/>
+                    </af:gridCell>
                 </af:gridRow>
             </af:panelGridLayout>
-            <af:region value="#{bindings.showlocatiobycitybtf1.regionModel}" id="r1"/>
         </af:form>
     </af:document>
 </f:view>

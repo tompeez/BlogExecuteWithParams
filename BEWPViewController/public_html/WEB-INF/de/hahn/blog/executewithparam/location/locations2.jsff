@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich" xmlns:f="http://java.sun.com/jsf/core">
+  <af:panelCollection id="pc1">
+    <f:facet name="menus"/>
+    <f:facet name="toolbar"/>
+    <af:table value="#{bindings.LocationsWithParamView.collectionModel}" var="row" rows="#{bindings.LocationsWithParamView.rangeSize}"
+              emptyText="#{bindings.LocationsWithParamView.viewable ? 'No data to display.' : 'Access Denied.'}" rowBandingInterval="0"
+              selectedRowKeys="#{bindings.LocationsWithParamView.collectionModel.selectedRow}"
+              selectionListener="#{bindings.LocationsWithParamView.collectionModel.makeCurrent}" rowSelection="single"
+              fetchSize="#{bindings.LocationsWithParamView.rangeSize}" filterModel="#{bindings.LocationsWithParamViewQuery.queryDescriptor}"
+              queryListener="#{bindings.LocationsWithParamViewQuery.processQuery}" filterVisible="true" varStatus="vs" id="t1">
+      <af:column sortProperty="#{bindings.LocationsWithParamView.hints.LocationId.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.LocationsWithParamView.hints.LocationId.label}" id="c1">
+        <af:outputText value="#{row.LocationId}" shortDesc="#{bindings.LocationsWithParamView.hints.LocationId.tooltip}" id="ot1">
+          <af:convertNumber groupingUsed="false" pattern="#{bindings.LocationsWithParamView.hints.LocationId.format}"/>
+        </af:outputText>
+      </af:column>
+      <af:column sortProperty="#{bindings.LocationsWithParamView.hints.StreetAddress.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.LocationsWithParamView.hints.StreetAddress.label}" id="c2">
+        <af:outputText value="#{row.StreetAddress}" shortDesc="#{bindings.LocationsWithParamView.hints.StreetAddress.tooltip}" id="ot2"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.LocationsWithParamView.hints.PostalCode.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.LocationsWithParamView.hints.PostalCode.label}" id="c3">
+        <af:outputText value="#{row.PostalCode}" shortDesc="#{bindings.LocationsWithParamView.hints.PostalCode.tooltip}" id="ot3"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.LocationsWithParamView.hints.City.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.LocationsWithParamView.hints.City.label}" id="c4">
+        <af:outputText value="#{row.City}" shortDesc="#{bindings.LocationsWithParamView.hints.City.tooltip}" id="ot4"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.LocationsWithParamView.hints.StateProvince.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.LocationsWithParamView.hints.StateProvince.label}" id="c5">
+        <af:outputText value="#{row.StateProvince}" shortDesc="#{bindings.LocationsWithParamView.hints.StateProvince.tooltip}" id="ot5"/>
+      </af:column>
+      <af:column sortProperty="#{bindings.LocationsWithParamView.hints.CountryId.name}" filterable="true" sortable="true"
+                 headerText="#{bindings.LocationsWithParamView.hints.CountryId.label}" id="c6">
+        <af:outputText value="#{row.CountryId}" shortDesc="#{bindings.LocationsWithParamView.hints.CountryId.tooltip}" id="ot6"/>
+      </af:column>
+    </af:table>
+    <f:facet name="statusbar"/>
+  </af:panelCollection>
+</ui:composition>
